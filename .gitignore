@@ -1,1 +1,3 @@
 /.history
+.venv
+data/Building_permits_NYC.csv
