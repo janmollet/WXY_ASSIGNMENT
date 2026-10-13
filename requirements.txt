@@ -6,3 +6,6 @@ requests
 jupyter
 ipykernel
 geopy
+seaborn
+geopandas
+folium
