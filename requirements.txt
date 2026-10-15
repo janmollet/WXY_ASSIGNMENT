@@ -9,3 +9,4 @@ geopy
 seaborn
 geopandas
 folium
+openpyxl
