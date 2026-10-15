@@ -86,13 +86,83 @@ This approach establishes a safer and more maintainable development workflow. I 
 
 ## HOW TO ACCESS IT
 
-Since there is a layer of protection, you can access the website and test it out using the following credentials if neede:
+Since there is a layer of protection (auth), you can access the website and test it out feel free to use the following credentials:
 
 **username:** jan10mollet@gmail.com
 **password:** Wxy_test10!
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 # A.2 DEVELOPING A WEBSITE FOR A SPECIFIC SCENARIO
 
+------------------
+
+Scenario: *You are working with the NYC Department of City Planning on a neighborhood plan. As part of the process, we are developing a website to solicit community input on what the plan should include. The website must have an interactive map with context layers and a feature that allows community members to add  comments to the map to share ideas for the plan. The comments should not be publicly visible on the site but must be saved along with their location information so that they can later be analyzed.*
+
+------------------
+
+I believe the first step should be to establish a secure authentication layer before allowing users to access the interactive mapping interface. This would allow us to manage participation, associate multiple comments with the same user throughout the planning process, and reduce the risk of spam or unauthorized submissions.
+
+Each participant would have a unique identifier linked to their account, allowing their comments to be stored alongside the geographic coordinates of the locations they reference. This would make it easier to analyze participation patterns and understand how community members contribute to the planning process over time.
+
+Once authenticated, users would access a simple, visually engaging interface centered around an interactive map of the neighborhood. The map would display relevant contextual layers, such as land use, transportation infrastructure, public spaces, and existing community facilities. Users could toggle these layers on and off, selecting the information most relevant to their interests.
+
+The interface should make submitting feedback as intuitive as possible. Participants could click on a specific location on the map, complete a short form describing their comment or suggestion, and submit it for later analysis by the planning team. Comments would be stored privately rather than displayed publicly on the website.
+
+At the bottom of the page, I would include a brief, welcoming explanation of the initiative to encourage participation. For example:
+
+*“Be part of your neighborhood's future. Share your ideas and help shape the plan for your community. Simply click on the map, tell us what you think, and submit your feedback.”*
+
+To make the process as intuitive as possible, I would also include a short sequence of instructions explaining how to submit a suggestion:
+
+**1. Select a location:** Click on the specific point on the map where you would like to make a suggestion or raise a concern.
+
+**2. Open the form:** A form will automatically appear after you select a location on the map.
+
+**3. Provide your feedback:** The form will include the following fields:
+
+        - Inquiry type (dropdown): Select the category most relevant to your suggestion, such as streets, buildings, parks, or public transportation.
+
+        - Comments: Describe your idea, concern, or suggestion.
+
+        - Latitude: Automatically populated based on the selected location and not editable by the user.
+
+        - Longitude: Automatically populated based on the selected location and not editable by the user.
+
+**4. Submit your suggestion:** Click the submit button to save your feedback and its geographic location for subsequent analysis by the planning team.
+
+**5. Confirmation:** A thank-you message will appear to confirm that your suggestion has been submitted successfully.
+
+*There will also be a **CANCEL** button so the user can correct the location or start over. The information won't be saved until the users **SUBMIT** the form*
+
+Take a look at a basic design for that type of website:
+
+![WEBSITE BASIC UI](answers_pictures/DIAGRAMA_A_WXY.jpg)
+
+### FRONTEND
+
+I would use React to develop the frontend, with HTML to structure the interface and CSS to handle its styling and responsive layout. React would allow me to build a component-based interface, including the interactive map, contextual layers, inquiry form, and submission confirmation.
+
+
+### BACKEND:
+
+For the backend, I would use Supabase to manage the database and user authentication. The database would consist of two main tables:
+
+1. USER TABLE: store some data of the user such as NAME, LAST NAME and a USER.ID (unique identifier)
+
+2. INQUIRY TABLE: store data for each specific inquiry such as CATEGORY, MESSAGE, LATITUDE (prefilled), LONGITUDE (prefilled) and also the USER ID and a INQUIRY.ID (Unique identifier for that specific record)
+
+
+Supabase Authentication would handle account registration and login.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## PART B: GEOSPATIAL PYTHON TEST
+
+Everything is in the `part_b.ipynb` file.
+
+
+## PART C: USE OF LLMs
 
