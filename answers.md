@@ -168,7 +168,7 @@ Everything is in the `part_b.ipynb` file.
 
 ## PART C: USE OF LLMs
 
-The first thing I do when starting a project, besides understanding what we want to accomplish, is think about how to organize it and what steps I should follow to achieve my goals.
+The first thing I do when starting a project, besides understanding what we want to accomplish, is to think about how to organize it and what steps I should follow to achieve my goals.
 
 Since I started using AI a few years ago, it has helped me in many different ways. I usually have a lot of ideas come to mind. I can build this, then that, pull data from another source, and connect different components. AI has been very helpful in connecting all these dots and creating an effective workflow to execute my ideas.
 
