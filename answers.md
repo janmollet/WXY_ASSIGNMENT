@@ -163,6 +163,16 @@ Supabase Authentication would handle account registration and login.
 
 Everything is in the `part_b.ipynb` file.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ## PART C: USE OF LLMs
+
+The first thing I do when starting a project, besides understanding what we want to accomplish, is think about how to organize it and what steps I should follow to achieve my goals.
+
+Since I started using AI a few years ago, it has helped me in many different ways. I usually have a lot of ideas come to mind. I can build this, then that, pull data from another source, and connect different components. AI has been very helpful in connecting all these dots and creating an effective workflow to execute my ideas.
+
+I always like to code on my own and use resources such as Stack Overflow or the official documentation for a specific package or library. However, I think AI is also very good at optimizing code. Sometimes, I might overengineer something that could actually be done in just a few lines of code, and AI helps me identify simpler and more efficient approaches.
+
+Finally, I have also used AI to improve my writing and make it flow better. When working on data science projects and presenting the results to a non-technical audience, this becomes particularly important. The goal is to make sure everyone can follow the work and understand the results, even if they do not have a strong technical background.
 
