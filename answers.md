@@ -47,7 +47,7 @@ To develop Creamsco as a web-based software solution, I used the following techn
 4. **Firebase:** Google's backend-as-a-service platform, used to support the application's backend infrastructure without requiring me to manage my own servers. It provides services that simplify application development, data management, and deployment.
 
 
-## OVERVIEW TECH STACK
+## TECH STACK OVERVIEW
 
 ![Creamsco](answers_pictures/Creamsco.jpg)
 
